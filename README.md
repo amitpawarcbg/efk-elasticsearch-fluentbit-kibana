@@ -12,7 +12,7 @@ Also, using Fluent bit we can parse logs from various different input sources, f
 
 ## **How does it Work?**
 
-![](RackMultipart20220414-4-1ffjufp_html_114f4e4d7351a8d9.png)
+![1590057793-1](https://user-images.githubusercontent.com/88305831/163329055-1aef1f4b-d55e-4613-8893-a0e11470ef88.png)
 
 **Fluent bit is run as a DaemonSet** , which means each node in the cluster will have one pod for Fluent bit, and it will read logs from the  **/var/log/containers**  directory where log files are created for each Kubernetes namspace.
 
