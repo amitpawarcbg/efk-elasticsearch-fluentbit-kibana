@@ -105,3 +105,9 @@ For Fluent Bit we will have  **5 YAML files**  and apply them using the kubectl 
 Run the following command to see if the daemonset it created or not:
 
 # kubectl get ds -n kube-logging
+
+$ To test if Elastic search is working run followinf command on nodes.
+
+kubectl port-forward es-cluster-0 9200:9200 --namespace=kube-logging
+
+curl http://localhost:9200/_cluster/state?pretty
